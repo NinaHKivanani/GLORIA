@@ -5,12 +5,12 @@
 # GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
 
 ## Objectives
-This project aims to develop a benchmarking framework that evaluates the ability of large language models (LLMs) to generalize across key biomedical tasks, specifically Named Entity Recognition (NER) and diagnosis prediction. Using Chain of Thought (CoT) prompting, we guide models through structured reasoning steps to improve both task generalization and interpretability—critical for trust and transparency in healthcare.
+This project aims to develop a benchmarking framework that evaluates the ability of large language models (LLMs) to generalize across key biomedical tasks, specifically Named Entity Recognition (NER) and diagnosis prediction. Using Chain of Thought (CoT) prompting, we will guide models through structured reasoning steps to improve both task generalization and interpretability. Enhanced interpretability is critical in healthcare, where trust and transparency are paramount.
 
 ### Key Goals:
 1. **Cross-Task Transfer**: Determine if fine-tuning an LLM on NER can improve zero-shot or few-shot performance in diagnosis prediction.
 2. **Interpretability**: Assess how CoT prompting improves interpretability, allowing clinicians to understand the model’s decision-making process.
-3. **Model Evaluation**: Compare BioGPT and Llama3.2’s effectiveness in generalization across tasks with and without CoT prompting, providing insights into optimal architectures for biomedical applications.
+3. **Model Evaluation**: Model Evaluation: Compare BioGPT and Llama3.2’s effectiveness in generalization across tasks with and without CoT prompting, providing insights into optimal architectures for biomedical applications. BioGPT, with its domain-specific training on biomedical literature, is expected to excel in tasks requiring clinical terminology and understanding, whereas Llama3.2’s flexibility in general-purpose reasoning may demonstrate strengths in cross-task adaptability.
 
 Additionally, we utilize Parameter-Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRa) to ensure efficient experimentation within limited resources.
 
