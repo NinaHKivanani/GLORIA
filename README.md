@@ -5,6 +5,7 @@
 # GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
 
 ## Objectives
+<div align="justify">
 This project aims to develop a benchmarking framework that evaluates the ability of large language models (LLMs) to generalize across key biomedical tasks, specifically Named Entity Recognition (NER) and diagnosis prediction. Using Chain of Thought (CoT) prompting, we will guide models through structured reasoning steps to improve both task generalization and interpretability. Enhanced interpretability is critical in healthcare, where trust and transparency are paramount.
 
 ### Key Goals:
@@ -109,3 +110,5 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 <hr>
 `Note: The cover image/logo was created using OpenAI's DALL·E.`
+
+</div>
