@@ -110,4 +110,8 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 <hr>
 <small><em>Note: The cover image/logo was created using OpenAI's DALL·E.</em></small>
 
+<details>
+  <summary>Note</summary>
+  <p><em>The cover image/logo was created using OpenAI's DALL·E.</em></p>
+</details>
 
