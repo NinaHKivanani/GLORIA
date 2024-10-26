@@ -1,4 +1,4 @@
-![Logo]([[https://githu](https://github.com/NinaHKivanani/GLORIA/upload/main))
+![Logo]([[[https://githu](https://github.com/NinaHKivanani/GLORIA/upload/main)](https://github.com/NinaHKivanani/GLORIA/blob/main/logo_gloria.svg))
 
 
 
