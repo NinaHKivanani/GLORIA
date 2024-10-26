@@ -1,4 +1,5 @@
-# GLORIA: GeneraLization with Chain of Thought for Biomedical AI
+# GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
+
 
 **BLAH9 Task** 
 
