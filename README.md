@@ -83,7 +83,7 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
   </tr>
   <tr>
     <td><img src="img/Davide-Liga.jpg" width="100" /></td>
-    <td><strong>Davide Liga</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science (DCS)</td>
+    <td><strong>Davide Liga</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science </td>
   </tr>
 </table>
 
