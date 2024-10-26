@@ -23,7 +23,7 @@ Our project extends beyond previous work by specifically exploring CoT's effecti
    2. **Interpretability Hypothesis**: CoT prompts will enhance the interpretability of model outputs, making the model’s reasoning more accessible and understandable for healthcare professionals.
 
 ## Research Questions
-1. Can fine-tuning on NER improve model performance on diagnosis prediction without additional training?
+1. Can fine-tuning NER improve model performance on diagnosis prediction without additional training?
 2. How does CoT prompting enhance interpretability in biomedical contexts, specifically in reasoning tasks?
 3. How do recent LLM architectures (BioGPT, Llama3.2) compare in generalization across biomedical tasks when CoT is applied?
 
@@ -38,7 +38,7 @@ To ensure robust and relevant evaluation, we will use well-established biomedica
 
 - **Diagnosis Prediction**:
    - CheXpert Dataset: Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
-   - MIMIC-CXR: Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
+   - MIMIC-CXR: Contains radiology reports with associated diagnostic labels, which are ideal for both image-based and text-based evaluations.
 - **NER**:
    - BC5CDR: PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
    - NCBI Disease Corpus: PubMed abstracts with disease-specific annotations.
@@ -81,14 +81,23 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 2. **Improved Interpretability**: Insights into how CoT prompting aids reasoning in high-stakes clinical applications.
 
 
-
 ## Team
 
-Nina Hosseini-Kivanani, University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science
+<table>
+  <tr>
+    <td><img src="images/nina.jpg" width="100" /></td>
+    <td><strong>Nina Hosseini-Kivanani</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science</td>
+  </tr>
+  <tr>
+    <td><img src="images/dimitra.jpg" width="100" /></td>
+    <td><strong>Dimitra Anastasiou</strong><br>Luxembourg Institute of Science and Technology (LIST)</td>
+  </tr>
+  <tr>
+    <td><img src="images/davide.jpg" width="100" /></td>
+    <td><strong>Davide Liga</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science (DCS)</td>
+  </tr>
+</table>
 
-Dimitra Anastasiou, Luxembourg Institute of Science and Technology (LIST)
-
-Davide Liga, University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science (DCS)
 
 
 
