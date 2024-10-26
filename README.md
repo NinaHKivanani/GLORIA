@@ -20,20 +20,22 @@ Recent advancements in NLP have shown that LLMs can generalize across multiple t
 
 While CoT has shown promise in other domains, this approach has not been thoroughly researched within the BLAH framework, and our project extends beyond previous work by specifically exploring its effectiveness in biomedical NER and diagnosis prediction tasks. This novel focus aims to bridge a critical gap in the use of LLMs for cross-task generalization in healthcare.
 
-BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of clinical language and medical terminology~\cite{Luo2022BioGPT}. In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization~\cite{nori2023capabilities}. By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
+BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of the clinical language and medical terminology~\cite{Luo2022BioGPT}. In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization~\cite{nori2023capabilities}. By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
 
-Given the hackathon’s time limitations, we will use PEFT and LoRa, which allow effective model adaptation without excessive computational demands. These techniques ensure that our approach remains feasible, allowing us to explore task transfer and interpretability comprehensively even with limited infrastructure.
+Given the hackathon’s time limitations, we will use PEFT and LoRa, which allow effective model adaptation without excessive computational demands. These techniques ensure that our approach remains feasible, allowing us to explore task transfer and interpretability comprehensively, even with limited infrastructure.
 
 ### Hypotheses
-- **Cross-Task Transfer Hypothesis**: Fine-tuning on NER will improve zero-shot performance in diagnosis prediction, reducing the need for costly retraining.
+- **Cross-Task Transfer Hypothesis**: Cross-Task Transfer Hypothesis: Fine-tuning on NER will improve zero-shot performance in diagnosis prediction, reducing the need for costly retraining.
 - **Interpretability Hypothesis**: CoT prompts will enhance the interpretability of model outputs, making the model’s reasoning more accessible and understandable for healthcare professionals.
-
+  
 ## Research Questions
 1. Can fine-tuning NER improve model performance on diagnosis prediction without additional training?
 2. How does CoT prompting enhance interpretability in biomedical contexts, specifically in reasoning tasks?
 3. How do recent LLM architectures (BioGPT, Llama3.2) compare in generalization across biomedical tasks when CoT is applied?
 
 ## Approach and Tasks
+This project will conduct two core experiments to evaluate cross-task generalization with and without CoT prompting:
+
 1. **NER to Diagnosis Prediction**: Fine-tune a model on NER and evaluate its performance in diagnosis prediction under zero-shot and few-shot settings.
 2. **Diagnosis Prediction to NER**: Conversely, fine-tune the model on diagnosis prediction and assess generalization to NER, focusing on how CoT improves interpretability.
 
