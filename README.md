@@ -8,7 +8,7 @@
 # GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
 
 
-**BLAH9 Task** 
+
 
 
 ## Team
@@ -36,3 +36,7 @@ Davide Liga, University of Luxembourg, Faculty of Science, Technology and Medici
 6. **Wang, Z., Zhao, K., Wang, Z., and Shang, J.** (2022). Formulating few-shot fine-tuning towards language model pre-training: A pilot study on named entity recognition. *Findings of the Association for Computational Linguistics: EMNLP 2022*, 3186–3199. [Link](https://doi.org/10.18653/v1/2022.findings-emnlp.233)
 
 7. **Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824–24837. [Link](https://arxiv.org/abs/2201.11903)
+
+
+<hr>
+<p><em>Note: The cover image/logo was created using OpenAI's DALL·E.</em></p>
