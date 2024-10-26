@@ -1,4 +1,4 @@
-![Logo](https://github.com/NinaHKivanani/GLORIA/blob/main/logo_gloria.svg)
+![Logo](https://github.com/NinaHKivanani/GLORIA/blob/main/img/logo_gloria.svg)
 
 # GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
 
