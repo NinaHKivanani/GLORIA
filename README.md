@@ -74,7 +74,7 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 <table>
   <tr>
-    <td><img src="img/nnina.jpeg" width="95" /></td>
+    <td><img src="img/nnina.png" width="95" /></td>
     <td><strong>Nina Hosseini-Kivanani</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science</td>
   </tr>
   <tr>
