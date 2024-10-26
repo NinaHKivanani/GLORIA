@@ -39,17 +39,22 @@ This project will conduct two core experiments to evaluate cross-task generaliza
 1. **NER to Diagnosis Prediction**: Fine-tune a model on NER and evaluate its performance in diagnosis prediction under zero-shot and few-shot settings.
 2. **Diagnosis Prediction to NER**: Conversely, fine-tune the model on diagnosis prediction and assess generalization to NER, focusing on how CoT improves interpretability.
 
+To guide reasoning, CoT prompts will be designed to structure biomedical tasks logically. For instance, NER prompts will decompose entity identification into steps, while diagnosis prompts will guide symptom assessment to diagnosis.
+
 ## Datasets
+To ensure robust and relevant evaluation, we will use well-established biomedical datasets:
+
 - **Diagnosis Prediction**:
-   - **CheXpert Dataset**: Chest X-rays annotated with diagnoses.
-   - **MIMIC-CXR**: Radiology reports with diagnostic labels.
+   - **CheXpert Dataset**: Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
+   - **MIMIC-CXR**: Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
 - **NER**:
-   - **BC5CDR**: PubMed abstracts annotated for chemical-disease relationships.
+   - **BC5CDR**: PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
    - **NCBI Disease Corpus**: PubMed abstracts with disease-specific annotations.
 
 ## Evaluation Metrics
-- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy.
-- **Diagnosis Prediction (AUC-ROC)**: Evaluates a model’s capacity to differentiate among diagnostic categories.
+To measure model performance and interpretability, we will employ standardized metrics for each task:
+- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy. This metric is especially valuable due to the imbalance and specificity required in biomedical datasets, where certain entity types, such as rare diseases or chemical names, are underrepresented~\cite{lee2020biobert}.
+- **Diagnosis Prediction (AUC-ROC: Area Under the Curve - Receiver Operating Characteristic)}~\cite{irvinchexpert}**: It evaluates a model’s capacity to differentiate among diagnostic categories, capturing how well it distinguishes between true positive and false positive rates across various thresholds. In clinical contexts, the AUC-ROC provides an indication of the model's reliability in predicting outcomes across multiple conditions, such as distinguishing between “normal” and “pneumonia” or “cardiomegaly” categories in radiological imaging.
 
 ## 5-Day Hackathon Plan
 <details>
