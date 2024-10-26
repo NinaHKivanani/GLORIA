@@ -74,15 +74,15 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 <table>
   <tr>
-    <td><img src="img/nina.jpeg" width="100" /></td>
+    <td><img src="img/nina.jpeg" width="95" height="95" /></td>
     <td><strong>Nina Hosseini-Kivanani</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science</td>
   </tr>
   <tr>
-    <td><img src="img/Dimitra.jpg" width="95" /></td>
+    <td><img src="img/Dimitra.jpg" width="95" height="95" /></td>
     <td><strong>Dimitra Anastasiou</strong><br>Luxembourg Institute of Science and Technology (LIST)</td>
   </tr>
   <tr>
-    <td><img src="img/Davide-Liga.jpg" width="95" /></td>
+    <td><img src="img/Davide-Liga.jpg" width="95" height="95" /></td>
     <td><strong>Davide Liga</strong><br>University of Luxembourg, Faculty of Science, Technology and Medicine (FSTM), Department of Computer Science </td>
   </tr>
 </table>
