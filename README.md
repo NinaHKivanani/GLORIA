@@ -1,3 +1,9 @@
+![Logo]([https://github.com/username/repo-name/blob/main/images/logo.png](https://github.com/NinaHKivanani/GLORIA/blob/main/Logo.html))
+
+
+
+
+
 # GLORIA: GeneraLization with chain of thought fOR bIomedical Ai
 
 
