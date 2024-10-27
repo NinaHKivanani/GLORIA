@@ -16,11 +16,11 @@ This project aims to develop a benchmarking framework that evaluates the ability
 Additionally, due to the computational constraints typical in a hackathon setting, we will use Parameter-Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRa) techniques. These approaches allow us to fine-tune models with minimal computational cost, ensuring efficient experimentation and optimization within limited resources.
 
 ## Background and Motivation
-Recent advancements in NLP have shown that LLMs can generalize across multiple tasks. Chain of Thought (CoT) prompting has demonstrated success in guiding LLMs through multi-step reasoning, particularly for complex problem-solving tasks. However, its application in biomedical AI remains underexplored, especially in task-specific domains like NER and diagnosis prediction, which require a nuanced understanding of clinical language and interpretability. The objective of this project is to fill this gap by evaluating CoT’s potential to enhance cross-task generalization and reasoning within biomedical contexts (Wang et al (2022), Wei et al (2022)).
+Recent advancements in NLP have shown that LLMs can generalize across multiple tasks. Chain of Thought (CoT) prompting has demonstrated success in guiding LLMs through multi-step reasoning, particularly for complex problem-solving tasks. However, its application in biomedical AI remains underexplored, especially in task-specific domains like NER and diagnosis prediction, which require a nuanced understanding of clinical language and interpretability. The objective of this project is to fill this gap by evaluating CoT’s potential to enhance cross-task generalization and reasoning within biomedical contexts (Wang et al. (2022), Wei et al. (2022)).
 
 While CoT has shown promise in other domains, this approach has not been thoroughly researched within the BLAH framework, and our project extends beyond previous work by specifically exploring its effectiveness in biomedical NER and diagnosis prediction tasks. This novel focus aims to bridge a critical gap in the use of LLMs for cross-task generalization in healthcare.
 
-BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of the clinical language and medical terminology (Luo2022BioGPT). In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization (nori2023capabilities). By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
+BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of the clinical language and medical terminology (Luo2022BioGPT). In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization (Nori et al. (2023)). By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
 
 Given the hackathon’s time limitations, we will use PEFT and LoRa, which allow effective model adaptation without excessive computational demands. These techniques ensure that our approach remains feasible, allowing us to explore task transfer and interpretability comprehensively, even with limited infrastructure.
 
@@ -53,8 +53,8 @@ To ensure robust and relevant evaluation, we will use well-established biomedica
 
 ## Evaluation Metrics
 To measure model performance and interpretability, we will employ standardized metrics for each task:
-- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy. This metric is especially valuable due to the imbalance and specificity required in biomedical datasets, where certain entity types, such as rare diseases or chemical names, are underrepresented (lee2020biobert).
-- **Diagnosis Prediction (AUC-ROC: Area Under the Curve - Receiver Operating Characteristic)} (irvinchexpert)**: It evaluates a model’s capacity to differentiate among diagnostic categories, capturing how well it distinguishes between true positive and false positive rates across various thresholds. In clinical contexts, the AUC-ROC provides an indication of the model's reliability in predicting outcomes across multiple conditions, such as distinguishing between “normal” and “pneumonia” or “cardiomegaly” categories in radiological imaging.
+- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy. This metric is especially valuable due to the imbalance and specificity required in biomedical datasets, where certain entity types, such as rare diseases or chemical names, are underrepresented (Lee et al. (2022)).
+- **Diagnosis Prediction (AUC-ROC: Area Under the Curve - Receiver Operating Characteristic)} (Irvin et al. (2019))**: It evaluates a model’s capacity to differentiate among diagnostic categories, capturing how well it distinguishes between true positive and false positive rates across various thresholds. In clinical contexts, the AUC-ROC provides an indication of the model's reliability in predicting outcomes across multiple conditions, such as distinguishing between “normal” and “pneumonia” or “cardiomegaly” categories in radiological imaging.
 
 ## 5-Day Hackathon Plan
 <details>
@@ -116,9 +116,11 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 5. **Nori, H., King, N., McKinney, S. M., Carignan, D., and Horvitz, E.** (2023). Capabilities of GPT-4 on medical challenge problems. [Link](https://arxiv.org/abs/2303.13375)
 
-6. **Wang, Z., Zhao, K., Wang, Z., and Shang, J.** (2022). Formulating few-shot fine-tuning towards language model pre-training: A pilot study on named entity recognition. *Findings of the Association for Computational Linguistics: EMNLP 2022*, 3186–3199. [Link](https://doi.org/10.18653/v1/2022.findings-emnlp.233)
+6. **Luo, R., Sun, L., Xia, Y., Qin, T., Zhang, S., Poon, H., and Liu, T. Y.** (2022). BioGPT: generative pre-trained transformer for biomedical text generation and mining. *Briefings in Bioinformatics*, 23(6), bbac409. [Link](https://doi.org/10.1093/bib/bbac409)
 
-7. **Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824–24837. [Link](https://arxiv.org/abs/2201.11903)
+7. **Wang, Z., Zhao, K., Wang, Z., and Shang, J.** (2022). Formulating few-shot fine-tuning towards language model pre-training: A pilot study on named entity recognition. *Findings of the Association for Computational Linguistics: EMNLP 2022*, 3186–3199. [Link](https://doi.org/10.18653/v1/2022.findings-emnlp.233)
+
+8. **Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824–24837. [Link](https://arxiv.org/abs/2201.11903)
 </details>
 
 <hr>
