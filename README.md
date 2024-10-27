@@ -78,7 +78,7 @@ To measure model performance and interpretability, we will employ standardized m
 </details>
 
 ## Conclusion
-This project leverages Chain of Thought prompting to test cross-task generalization and interpretability in biomedical AI. By assessing CoT’s role in reasoning, we provide insights into LLM capabilities in real-world healthcare applications.
+This project leverages Chain of Thought prompting to test cross-task generalization and interpretability in biomedical AI, focusing on NER and diagnosis prediction. By assessing CoT’s role in reasoning, we provide insights into LLM capabilities in real-world healthcare applications, offering a transparent approach that clinicians can trust.
 
 ## Expected Contributions
 1. **Benchmarking Framework**: A tool for researchers to evaluate LLM generalization in biomedical tasks.
