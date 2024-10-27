@@ -16,11 +16,11 @@ This project aims to develop a benchmarking framework that evaluates the ability
 Additionally, due to the computational constraints typical in a hackathon setting, we will use Parameter-Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRa) techniques. These approaches allow us to fine-tune models with minimal computational cost, ensuring efficient experimentation and optimization within limited resources.
 
 ## Background and Motivation
-Recent advancements in NLP have shown that LLMs can generalize across multiple tasks. Chain of Thought (CoT) prompting has demonstrated success in guiding LLMs through multi-step reasoning, particularly for complex problem-solving tasks. However, its application in biomedical AI remains underexplored, especially in task-specific domains like NER and diagnosis prediction, which require a nuanced understanding of clinical language and interpretability. The objective of this project is to fill this gap by evaluating CoT’s potential to enhance cross-task generalization and reasoning within biomedical contexts~\cite{wang2022formulating, weichain}.
+Recent advancements in NLP have shown that LLMs can generalize across multiple tasks. Chain of Thought (CoT) prompting has demonstrated success in guiding LLMs through multi-step reasoning, particularly for complex problem-solving tasks. However, its application in biomedical AI remains underexplored, especially in task-specific domains like NER and diagnosis prediction, which require a nuanced understanding of clinical language and interpretability. The objective of this project is to fill this gap by evaluating CoT’s potential to enhance cross-task generalization and reasoning within biomedical contexts (wang2022formulating, weichain).
 
 While CoT has shown promise in other domains, this approach has not been thoroughly researched within the BLAH framework, and our project extends beyond previous work by specifically exploring its effectiveness in biomedical NER and diagnosis prediction tasks. This novel focus aims to bridge a critical gap in the use of LLMs for cross-task generalization in healthcare.
 
-BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of the clinical language and medical terminology~\cite{Luo2022BioGPT}. In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization~\cite{nori2023capabilities}. By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
+BioGPT, with its domain-specific training on biomedical literature, is expected to perform well on tasks that require deep knowledge of the clinical language and medical terminology (Luo2022BioGPT). In contrast, Llama 3.2, a robust general-purpose LLM, brings flexibility and strong reasoning capabilities that make it suitable for testing cross-task generalization (nori2023capabilities). By assessing how each model handles task transfer between NER and diagnosis prediction under CoT prompting, we aim to identify the ideal balance between domain-specific knowledge and broad generalization. This comparison will reveal architecture-specific strengths, highlighting whether domain specialization or broader adaptability yields better results in biomedical applications.
 
 Given the hackathon’s time limitations, we will use PEFT and LoRa, which allow effective model adaptation without excessive computational demands. These techniques ensure that our approach remains feasible, allowing us to explore task transfer and interpretability comprehensively, even with limited infrastructure.
 
@@ -45,16 +45,16 @@ To guide reasoning, CoT prompts will be designed to structure biomedical tasks l
 To ensure robust and relevant evaluation, we will use well-established biomedical datasets:
 
 - **Diagnosis Prediction**:
-   - **CheXpert Dataset**: Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
+   - **CheXpert Dataset** (Irvin et al.(2019)): Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
    - **MIMIC-CXR**: Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
 - **NER**:
-   - **BC5CDR**: PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
-   - **NCBI Disease Corpus**: PubMed abstracts with disease-specific annotations.
+   - **BC5CDR** (Li et al. (2016)): PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
+   - **NCBI Disease Corpus** (Dogan, (2014)): PubMed abstracts with disease-specific annotations.
 
 ## Evaluation Metrics
 To measure model performance and interpretability, we will employ standardized metrics for each task:
-- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy. This metric is especially valuable due to the imbalance and specificity required in biomedical datasets, where certain entity types, such as rare diseases or chemical names, are underrepresented~\cite{lee2020biobert}.
-- **Diagnosis Prediction (AUC-ROC: Area Under the Curve - Receiver Operating Characteristic)}~\cite{irvinchexpert}**: It evaluates a model’s capacity to differentiate among diagnostic categories, capturing how well it distinguishes between true positive and false positive rates across various thresholds. In clinical contexts, the AUC-ROC provides an indication of the model's reliability in predicting outcomes across multiple conditions, such as distinguishing between “normal” and “pneumonia” or “cardiomegaly” categories in radiological imaging.
+- **NER (F1-Score)**: Balances precision and recall to assess entity extraction accuracy. This metric is especially valuable due to the imbalance and specificity required in biomedical datasets, where certain entity types, such as rare diseases or chemical names, are underrepresented (lee2020biobert).
+- **Diagnosis Prediction (AUC-ROC: Area Under the Curve - Receiver Operating Characteristic)} (irvinchexpert)**: It evaluates a model’s capacity to differentiate among diagnostic categories, capturing how well it distinguishes between true positive and false positive rates across various thresholds. In clinical contexts, the AUC-ROC provides an indication of the model's reliability in predicting outcomes across multiple conditions, such as distinguishing between “normal” and “pneumonia” or “cardiomegaly” categories in radiological imaging.
 
 ## 5-Day Hackathon Plan
 <details>
