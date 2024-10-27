@@ -46,7 +46,7 @@ To ensure robust and relevant evaluation, we will use well-established biomedica
 
 - **Diagnosis Prediction**:
    - **CheXpert Dataset** (Irvin et al.(2019)): Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
-   - **MIMIC-CXR**: Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
+   - **MIMIC-CXR** (Johnson et al. (2019)): Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
 - **NER**:
    - **BC5CDR** (Li et al. (2016)): PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
    - **NCBI Disease Corpus** (Dogan, (2014)): PubMed abstracts with disease-specific annotations.
@@ -118,9 +118,11 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 6. **Luo, R., Sun, L., Xia, Y., Qin, T., Zhang, S., Poon, H., and Liu, T. Y.** (2022). BioGPT: generative pre-trained transformer for biomedical text generation and mining. *Briefings in Bioinformatics*, 23(6), bbac409. [Link](https://doi.org/10.1093/bib/bbac409)
 
-7. **Wang, Z., Zhao, K., Wang, Z., and Shang, J.** (2022). Formulating few-shot fine-tuning towards language model pre-training: A pilot study on named entity recognition. *Findings of the Association for Computational Linguistics: EMNLP 2022*, 3186–3199. [Link](https://doi.org/10.18653/v1/2022.findings-emnlp.233)
+7. **Johnson, A. E. W., Pollard, T. J., Berkowitz, S. J., Greenbaum, N. R., Lungren, M. P., Deng, C.-Y., Mark, R. G., and Horng, S.** (2019). MIMIC-CXR, a de-identified publicly available database of chest radiographs with free-text reports. *Scientific Data*, 6, 317. [Link](https://doi.org/10.1038/s41597-019-0322-0)
 
-8. **Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824–24837. [Link](https://arxiv.org/abs/2201.11903)
+8. **Wang, Z., Zhao, K., Wang, Z., and Shang, J.** (2022). Formulating few-shot fine-tuning towards language model pre-training: A pilot study on named entity recognition. *Findings of the Association for Computational Linguistics: EMNLP 2022*, 3186–3199. [Link](https://doi.org/10.18653/v1/2022.findings-emnlp.233)
+
+9. **Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., Le, Q. V., Zhou, D., et al.** (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824–24837. [Link](https://arxiv.org/abs/2201.11903)
 </details>
 
 <hr>
