@@ -18,7 +18,7 @@
 - [Evaluation Metrics](#evaluation-metrics)
 - [5-Day Hackathon Plan](#5-day-hackathon-plan)
 - [🚀 Quick Start](#-quick-start)
-- [🛠 Requirements](#-requirements)
+- [🛠 Requirements](requirements.txt)
 - [Team](#team)
 - [References](#references)
 
