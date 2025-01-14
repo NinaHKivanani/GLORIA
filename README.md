@@ -35,7 +35,7 @@ This project aims to develop a benchmarking framework that evaluates the ability
 ### Key Goals:
 1. **Cross-Task Transfer**: Determine if fine-tuning an LLM on NER can improve zero-shot or few-shot performance in diagnosis prediction.
 2. **Interpretability**: Assess how CoT prompting improves interpretability, allowing clinicians to understand the model’s decision-making process.
-3. **Model Evaluation**: Model Evaluation: Compare BioGPT and Llama3.2’s effectiveness in generalization across tasks with and without CoT prompting, providing insights into optimal architectures for biomedical applications. BioGPT, with its domain-specific training on biomedical literature, is expected to excel in tasks requiring clinical terminology and understanding, whereas Llama3.2’s flexibility in general-purpose reasoning may demonstrate strengths in cross-task adaptability.
+3. **Model Evaluation**: Model Evaluation: Compare domain specific and general purpose models effectiveness in generalization across tasks with and without CoT prompting, providing insights into optimal architectures for biomedical applications. BioGPT, with its domain-specific training on biomedical literature, is expected to excel in tasks requiring clinical terminology and understanding, whereas Llama3.2’s flexibility in general-purpose reasoning may demonstrate strengths in cross-task adaptability.
 
 Additionally, due to the computational constraints typical in a hackathon setting, we will use Parameter-Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRa) techniques. These approaches allow us to fine-tune models with minimal computational cost, ensuring efficient experimentation and optimization within limited resources.
 
@@ -70,10 +70,9 @@ To ensure robust and relevant evaluation, we will use well-established biomedica
 
 - **Diagnosis Prediction**:
    - **CheXpert Dataset** (Irvin et al.(2019)): Chest X-rays annotated with diagnoses, useful for evaluating diagnosis prediction in radiology.
-   - **MIMIC-CXR** (Johnson et al. (2019)): Contains radiology reports with associated diagnostic labels, ideal for both image-based and text-based evaluations.
+   - **IU-Xray** (Demner-Fushman et al., (2016)): is a set of chest X-ray images paired with their corresponding diagnostic reports. The dataset contains 7,470 pairs of images and reports. It contains radiology reports with associated diagnostic labels, which is ideal for both image-based and text-based evaluations.
 - **NER**:
    - **BC5CDR** (Li et al. (2016)): PubMed abstracts annotated for chemical-disease relationships, suited for biomedical NER.
-   - **NCBI Disease Corpus** (Dogan, (2014)): PubMed abstracts with disease-specific annotations.
 
 ## Evaluation Metrics
 To measure model performance and interpretability, we will employ standardized metrics for each task:
@@ -144,7 +143,7 @@ This project leverages Chain of Thought prompting to test cross-task generalizat
 
 1. **Irvin, J., et al.** (2019). CheXpert: A large chest radiograph dataset with uncertainty labels and expert comparison. *Proceedings of the AAAI Conference on Artificial Intelligence*, 33, 590–597. [Link](https://arxiv.org/abs/1901.07031)
 
-2. **Dogan, R. I., Leaman, R., and Lu, Z.** (2014). NCBI disease corpus: A resource for disease name recognition and concept normalization. *Journal of Biomedical Informatics*, 47, 1–10. [Link](https://doi.org/10.1016/j.jbi.2013.12.006)
+2. **Demner-Fushman, D., Kohli, M. D., Rosenman, M. B., Shooshan, S. E., Rodriguez, L., Antani, S., ... & McDonald, C. J.** (2016). Preparing a collection of radiology examinations for distribution and retrieval. *Journal of the American Medical Informatics Association*, 23(2), 304-310.  [Link](https://doi.org/10.1093/jamia/ocv080)
 
 3. **Lee, J., Yoon, W., Kim, S., Kim, D., Kim, S., So, C. H., and Kang, J.** (2020). BioBERT: A pre-trained biomedical language representation model for biomedical text mining. *Bioinformatics*, 36(4), 1234–1240. [Link](https://doi.org/10.1093/bioinformatics/btz682)
 
